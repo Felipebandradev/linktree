@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Fleur+De+Leah&display=swap");
+
+body {
+	/*background-color: black;*/
+	/*background-color: rgb(0, 0, 0);*/
+	/*background-color: #00000;*/
+
+	/*background: linear-gradient(90deg, yellow, red);*/
+	/*background: radial-gradient(red, yellow);*/
+
+	background-image: url("../assets/img/foto_fundo_projeto.jpg");
+
+	background-size: 100%;
+
+	/*background-repeat: no-repeat;*/
+	background-size: cover;
+	background-position: center;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+img#persona {
+	width: 200px;
+	height: 200px;
+
+	border-radius: 200px;
+
+	/* width style color */
+	border: 10px solid white;
+
+	/*X    Y   esfumaçado  cor*/
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+
+	margin: 50px;
+}
+
+.titulos {
+	color: white;
+	text-align: center;
+
+	width: 100vw;
+	background-color: rgba(137, 43, 226, 0.26);
+}
+
+h1 {
+	font-size: 60px;
+
+	font-family: "Fleur De Leah", cursive;
+	font-weight: 400;
+	font-style: normal;
+
+	margin-bottom: 0px;
+}
+
+h2 {
+	font-size: 35px;
+	font-family: "Barriecito", system-ui;
+	font-weight: 400;
+	font-style: normal;
+
+	/* margin-top: 0px;
+	margin-bottom: 50px; */
+	/* Margem: top  right bottom left  */
+	margin: 0px 0px 50px 0px;
+}
+
+figure {
+	display: flex;
+	justify-content: center;
+}
+
+#ButtonArea {
+	width: 100vw;
+	padding: 20px;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.cardLink {
+	width: 500px;
+	height: 400px;
+	padding: 25px;
+
+	margin: 10px;
+
+	& .botao {
+		background-color: rgb(255, 255, 255);
+
+		border: none;
+		width: 500px;
+		margin: 10px;
+		font-size: 30px;
+		padding: 10px;
+		border-radius: 45px;
+
+		/* X, Y, esfumaçado, cor (cor, cor, cor, alpha 0 - 1) */
+		box-shadow: 15px 15px 5px rgba(23, 215, 250, 0.3);
+
+		/* Conta o tempo em segundos */
+		transition: 0.3s;
+
+		/* Muda a imagem do cursor para pointer */
+		cursor: pointer;
+
+		&:hover {
+			background-color: blueviolet;
+			color: aliceblue;
+			font-size: 40px;
+			transform: scale(1.2);
+			transform: rotate(5deg);
+		}
+		text-decoration: none;
+
+		& #CardFoto {
+			background-image: url("../assets/img/foto_fundo_projeto.jpg");
+			background-size: 100%;
+
+			/*background-repeat: no-repeat;*/
+			background-size: cover;
+			background-position: center;
+			width: 485px;
+			height: 150px;
+
+			border-radius: 50px 50px 15px 15px;
+
+			padding: 10px;
+		}
+	}
+}
+
+#IconsArea {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 35px;
+
+	& > .icones {
+		margin: 20px;
+		transition: 0.3s;
+
+		svg {
+			transition: 0.3s;
+			&:hover {
+				/* Para mudar a cor dos svg utilizamos Fill */
+				fill: rgb(0, 0, 0);
+				cursor: pointer;
+			}
+		}
+	}
+}
